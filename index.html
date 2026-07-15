@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkis Sklavounakis - CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @page { margin: 0; padding: 0; }
+    body { margin: 0; padding: 0; }
+    .print-page { page-break-after: always; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+  <div class="max-w-4xl mx-auto bg-white shadow-xl">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-slate-800 to-slate-900 text-white px-8 py-10">
+      <h1 class="text-5xl font-bold mb-2">Alkis <span class="text-5xl font-bold mb-2">Sklavounakis</span></h1>
+      <p class="text-slate-300 text-sm mb-6">Senior Cloud Infrastructure Engineer</p>
+      
+      <!-- Contact Info -->
+      <div class="flex flex-wrap gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-map-marker-alt text-teal-400"></i>
+          <span>Ioannou Foka 11, Argostoli, 28100</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-phone text-teal-400"></i>
+          <span>+30 6978019509</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fas fa-envelope text-teal-400"></i>
+          <a href="mailto:sklavounakis.alkiviadis@gmail.com" class="hover:text-teal-400 transition">sklavounakis.alkiviadis@gmail.com</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <i class="fab fa-linkedin text-teal-400"></i>
+          <a href="https://www.linkedin.com/in/alkiviadis-sklavounakis" class="hover:text-teal-400 transition">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="px-8 py-8">
+      <!-- Professional Summary -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-4">
+          <i class="fas fa-briefcase text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Professional Summary</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        <p class="text-slate-700 leading-relaxed text-base">Senior Cloud Infrastructure Engineer with a strong focus on automation and DevOps practices. I thrive on designing and implementing scalable, resilient cloud infrastructure and fully automated CI/CD pipelines. I enjoy solving complex problems through Infrastructure as Code and streamlining deployment processes to accelerate delivery and improve reliability.</p>
+      </section>
+
+      <!-- Experience -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <i class="fas fa-history text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Experience</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        
+        <div class="space-y-6">
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Senior Cloud Infrastructure Engineer - AI Platform Lead</h3>
+                <p class="text-teal-600 font-semibold">Sitecore</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">02/2026 – Current</span>
+            </div>
+            
+            <ul class="space-y-2 mt-3">
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Led the design and implementation of a <strong>Context Engineering Platform</strong>, a production-grade <strong>RAG</strong> (Retrieval-Augmented Generation) infrastructure serving as an AI enabler for the entire department. The platform addressed a critical team challenge: discovering and retrieving needed information scattered across ~250 repositories with multiple master branches. The solution provides relevant context to Copilot agents, IDE extensions, and API consumers, enabling teams to quickly find information that was previously difficult to locate.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Architected a comprehensive RAG platform with Azure AI Search for hybrid (vector + keyword) indexing, exposing context via an <strong>MCP</strong> (Model Context Protocol) server deployed on Azure Container Apps, with automated data ingestion from GitHub and Azure DevOps repositories.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Led infrastructure-as-code implementation using Terraform with <strong>GitHub Actions CI/CD pipelines</strong> for zero-downtime blue-green deployments, managed identities for secure service-to-service communication, and comprehensive OpenTelemetry instrumentation with Azure Monitor integration.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Engineered the platform with enterprise-grade security (zero shared keys at runtime, RBAC-only data-plane access, PaaS firewalls, private endpoints), high availability (99.5% uptime target with Front Door and multi-replica Container Apps), and disaster recovery (cold standby strategy with cross-region storage replication).</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Designed and implemented a central mechanism for <strong>distributing AI Skills</strong> to all repositories across the department, enabling seamless propagation of AI capabilities and standardized interfaces for teams to leverage the platform's context-enriched services organization-wide.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Built the context ingestion layer using a <strong>repository crawler tool</strong> that automatically extracts and processes local context from each of the ~250 repositories, enabling the platform to maintain accurate, repository-specific metadata and content for comprehensive indexing and contextual retrieval.</span>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Senior Cloud Infrastructure Engineer - Technical Lead</h3>
+                <p class="text-teal-600 font-semibold">Sitecore</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">03/2024 – 02/2026</span>
+            </div>
+            
+            <ul class="space-y-2 mt-3">
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Technical leader in the Managed Cloud domain, driving the development, deployment, and operational success of cloud-based products hosted entirely in Azure Public Cloud.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Lead and contribute to the <strong>fully automated release process</strong> of code and documentation delivered to the Sitecore Operations team, incorporating automated end-to-end tests with automatic bug creation on failure to ensure quality, consistency, and deployment confidence.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Lead the team in building and maintaining CI/CD pipelines using <strong>Azure DevOps</strong>, PowerShell, Terraform, Ansible, Python, and Bicep to provision, manage, and upgrade Managed Cloud PaaS products based on Azure App Services and containerized solutions based on AKS, both equipped with integrated disaster recovery strategies.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Design and implement self-hosted <strong>Solr</strong> solutions with disaster recovery, enabling high availability and fault tolerance across customer environments.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Spearheaded the creation of a custom VMSS-based Azure DevOps agent pool using Terraform, Ansible, and Packer, enhancing pipeline performance, elasticity, and cost-efficiency for Managed Cloud deployments.</span>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Cloud Automation Engineer</h3>
+                <p class="text-teal-600 font-semibold">Sitecore</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">11/2022 – 03/2024</span>
+            </div>
+            
+          </div>
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Cloud Ops Engineer 2</h3>
+                <p class="text-teal-600 font-semibold">Citrix Systems</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">09/2021 – 11/2022</span>
+            </div>
+            
+            <ul class="space-y-2 mt-3">
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Full-time work as Cloud Ops Engineer, involved in the core work related with the <strong>FedRAMP compliance</strong> project of Citrix.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Team consisted of members from three different time zones (US, Greece, India), with the main objective of creating and maintaining a FedRAMP compliance platform used by Citrix product teams for their deployments and releases.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Used <strong>Azure Government</strong> to host platform services (CI/CD tools: Team City, Jenkins, HashiCorp Vault; Monitor Tools: Splunk, Tenable, OWASP Zap; Active Directory services: Domain Controllers, DNS, SMTP, RDG).</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Lead the refactoring of the entire infrastructure code base (HashiCorp Terraform) using a modular approach, with Continuous Development using a Jenkins pipeline and unit testing with Go Lang and the Terratest Libraries.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Lead all the work to establish an HA HashiCorp Vault with a dedicated Squid proxy in the FedRAMP platform.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Configured multiple services (Windows and Linux OS based) with Ansible, along with the creation of OS hardening images based on CIS Benchmarks.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Designed a FedRAMP Compliance Alerting Solution with Azure Monitor and Azure Functions.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Worked on Python Object-Oriented code related with User Access Reviews and MSSQL Database.</span>
+              </li>
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Work on an on-call schedule with PagerDuty.</span>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Cloud Ops Engineer</h3>
+                <p class="text-teal-600 font-semibold">Citrix Systems</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">01/09/2019 – 27/09/2021</span>
+            </div>
+            
+          </div>
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start mb-2">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Software Engineer Intern</h3>
+                <p class="text-teal-600 font-semibold">Citrix Systems</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">01/03/2019 – 31/05/2019</span>
+            </div>
+            
+            <ul class="space-y-2 mt-3">
+              
+              <li class="text-slate-700 text-sm leading-relaxed flex gap-3">
+                <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-arrow-right text-xs"></i></span>
+                <span>Full-time work as Software Engineer Intern.</span>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <i class="fas fa-graduation-cap text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Education</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        
+        <div class="space-y-4">
+          
+          <div class="border-l-4 border-teal-600 pl-6 py-2">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800">Master Computer Engineering and Informatics</h3>
+                <p class="text-teal-600 font-semibold">Polytechnic University of Patras</p>
+              </div>
+              <span class="text-sm text-slate-500 font-medium whitespace-nowrap ml-4">01/10/2013 – 30/07/2019</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Digital Skills -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <i class="fas fa-code text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Digital Skills</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        
+        <div class="space-y-5">
+          <div>
+            <h4 class="text-sm font-bold text-slate-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+              <i class="fas fa-star text-teal-500"></i> Work Daily
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">Azure</span>
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">HashiCorp Terraform</span>
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">Azure DevOps pipelines</span>
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">GitHub Actions</span>
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">Ansible</span>
+              
+              <span class="inline-block px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium border border-teal-300 shadow-sm">PowerShell</span>
+              
+            </div>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-bold text-slate-700 uppercase tracking-wide mb-3 flex items-center gap-2">
+              <i class="fas fa-check-circle text-slate-500"></i> Work Often
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Python</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Azure AI Foundry and Search</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Kubernetes</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Docker</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Bicep</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">ARM templates</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Bash</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">HashiCorp Vagrant</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">HashiCorp Packer</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">HashiCorp Vault</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Golang</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">IIS and Microsoft Active Directory</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Jenkins</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Ubuntu Linux</span>
+              
+              <span class="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-medium border border-slate-300 shadow-sm">Windows Server</span>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <i class="fas fa-medal text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Certifications</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        
+        <ul class="space-y-2">
+          
+          <li class="text-slate-700 flex gap-3">
+            <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-check text-sm"></i></span>
+            
+            <a href="https://www.credly.com/badges/1a81a41d-59f5-47e2-8760-80c7e058c059/linked_in?t=rqlff3" class="hover:text-teal-600 hover:underline transition">Microsoft Azure Fundamentals (AZ-900)</a>
+            
+          </li>
+          
+          <li class="text-slate-700 flex gap-3">
+            <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-check text-sm"></i></span>
+            
+            <a href="https://learn.microsoft.com/en-us/users/alkissklavounakis-0054/credentials/c1fb48ae600b0f4?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="hover:text-teal-600 hover:underline transition">Microsoft Azure Administrator Associate (AZ-104)</a>
+            
+          </li>
+          
+          <li class="text-slate-700 flex gap-3">
+            <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-check text-sm"></i></span>
+            
+            <a href="https://www.credly.com/badges/9c29d655-a33a-4ad8-b793-3f798f79b7de/linked_in?t=rwwqxd" class="hover:text-teal-600 hover:underline transition">Microsoft Azure Network Engineer Associate (AZ-700)</a>
+            
+          </li>
+          
+          <li class="text-slate-700 flex gap-3">
+            <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-check text-sm"></i></span>
+            
+            <a href="https://learn.microsoft.com/en-us/users/alkissklavounakis-0054/credentials/f66ee6768e6e949d?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="hover:text-teal-600 hover:underline transition">Microsoft DevOps Engineer Expert (AZ-400)</a>
+            
+          </li>
+          
+          <li class="text-slate-700 flex gap-3">
+            <span class="text-teal-500 mt-1 flex-shrink-0"><i class="fas fa-check text-sm"></i></span>
+            
+            <a href="https://www.credly.com/badges/dcc9be0e-3adf-4bcf-8e2d-f1c63e649fea/linked_in?t=t8hdb0" class="hover:text-teal-600 hover:underline transition">HashiCorp Terraform Associate (003)</a>
+            
+          </li>
+          
+        </ul>
+      </section>
+
+      <!-- Languages -->
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-6">
+          <i class="fas fa-globe text-teal-600 text-xl"></i>
+          <h2 class="text-2xl font-bold text-slate-800">Language Skills</h2>
+          <div class="flex-1 h-1 bg-gradient-to-r from-teal-600 to-slate-300 ml-4"></div>
+        </div>
+        
+        <div class="space-y-3">
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <p class="text-slate-700"><span class="font-semibold text-slate-800">Mother Tongue:</span> Greek</p>
+          </div>
+          
+          <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <p class="text-slate-700"><span class="font-semibold text-slate-800">English:</span> Listening <span class="text-teal-600 font-medium">B1</span> | Reading <span class="text-teal-600 font-medium">B1</span> | Writing <span class="text-teal-600 font-medium">B1</span></p>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-4 text-xs">
+      <p>Generated on July 15, 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
